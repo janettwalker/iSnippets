@@ -1,0 +1,8 @@
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/bin/Debug/netcoreapp1.1/iSnippets.deps.json
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/bin/Debug/netcoreapp1.1/iSnippets.runtimeconfig.json
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/bin/Debug/netcoreapp1.1/iSnippets.runtimeconfig.dev.json
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/obj/Debug/netcoreapp1.1/iSnippets.AssemblyInfo.cs
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/bin/Debug/netcoreapp1.1/iSnippets.dll
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/bin/Debug/netcoreapp1.1/iSnippets.pdb
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/obj/Debug/netcoreapp1.1/iSnippets.dll
+/Users/janetwalker/Documents/Code_Bootcamp/iSnippets/obj/Debug/netcoreapp1.1/iSnippets.pdb
