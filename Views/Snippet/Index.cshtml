@@ -5,7 +5,15 @@
 }
 
 <h2>Index</h2>
-
+<form>
+  <p>
+    <label for="BrandSearch">Language:</label>
+    <input type="text" name="BrandSearch" />
+  </p>
+  <input type="submit" value="Filter" />
+</form>
+<br>
+<br>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -50,6 +58,8 @@
                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
+
+        
 }
     </tbody>
 </table>

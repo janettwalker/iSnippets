@@ -19,10 +19,10 @@ namespace iSnippets.Controllers
         }
 
         // GET: Snippet
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Snippet.ToListAsync());
-        }
+        // public async Task<IActionResult> Index()
+        // {
+        //     return View(await _context.Snippet.ToListAsync());
+        // }
 
         // GET: Snippet/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -142,6 +142,23 @@ namespace iSnippets.Controllers
             _context.Snippet.Remove(snippet);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Index(string nameSearch, string brandSearch)
+        {
+            var snippet = from Snippet in _context.Snippet select Snippet;
+
+            if (!String.IsNullOrEmpty(nameSearch))
+            {
+                snippet = snippet.Where(Snippet => Snippet.Title.Contains(nameSearch));
+            }
+
+            if (!String.IsNullOrEmpty(brandSearch))
+            {
+                snippet = snippet.Where(Snippet => Snippet.Language.Contains(brandSearch));
+            }
+
+            return View(await snippet.ToListAsync());
         }
 
         private bool SnippetExists(int id)

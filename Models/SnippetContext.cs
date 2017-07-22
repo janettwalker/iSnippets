@@ -11,4 +11,5 @@ namespace iSnippets.Models
 
         public DbSet<iSnippets.Models.Snippet> Snippet { get; set; }
     }
+    
 }

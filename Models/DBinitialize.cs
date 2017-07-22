@@ -12,5 +12,6 @@ namespace iSnippets.Models
                 serviceProvider.GetRequiredService<DbContextOptions<SnippetContext>>());
             context.Database.EnsureCreated();
         }
+        
     }
 }
